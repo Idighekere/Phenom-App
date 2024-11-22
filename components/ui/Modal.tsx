@@ -26,9 +26,11 @@ export default Modals
 const styles = StyleSheet.create({
   modalContent: {
     backgroundColor: Colors.background,
+    borderWidth: 1.4,
+    borderColor: Colors.primary,
     height: 'auto',
-    width: '100%',
-    margin: 20,
+    width: '95%',
+    margin: 10,
     borderRadius: 12,
     position: 'absolute',
     bottom: 0,

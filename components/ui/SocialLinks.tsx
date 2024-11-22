@@ -12,17 +12,17 @@ type Props = {
 const links=[
 {
     platform:"Whatsapp",
-    link:"",
+    link:"https://t.me/PhenomOfficialRep",
     icon:<FontAwesome name='whatsapp' size={40} color='#fff' />
 
 },{
     platform:"Telegram",
-    link:"",
+    link:"https://t.me/PhenomOfficialRep",
     icon:<Feather name='send' size={40} color='#fff' />
 
 },{
     platform:"TikTok",
-    link:"",
+    link:"https://t.me/PhenomOfficialRep",
     icon:<FontAwesome5 name='tiktok' size={40} color='#fff' />
 
 },{

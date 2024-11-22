@@ -29,7 +29,7 @@ const About = (props: Props) => {
         </Text>
 
         <Text style={styles.text}>
-          <Text style={{ fontWeight: '700' }}>Why Choose Phenom?</Text>{' '}
+x          <Text style={{ fontWeight: '700' }}>Why Choose Phenom?</Text>{' '}
           {`We believe in empowering individauls to reach their fullest potential, offering knowledge and insights that can support personal and financial growth. Think of Phenom as your gateway to exploring new digital horizons, with clear and informative content to guide you every step of the way. Join us on this journey, and let Phenom be the foundation of your new opportunities.`}
         </Text>
       </Text>
