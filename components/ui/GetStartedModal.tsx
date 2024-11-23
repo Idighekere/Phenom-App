@@ -19,7 +19,7 @@ const GetStartedModal = ({ isVisible, onClose, children }: Props) => {
         process and help you make the most out of your new opportunities.
       </Text>
       {/* <Button label='Contact Our Verified Vendor'/> */}
-      <Link href="" style={styles.button}><Text style={[styles.text, { textAlign: "center", }]}>
+      <Link href="https://t.me/PhenomOfficialRep" style={styles.button}><Text style={[styles.text, { textAlign: "center", }]}>
         Contact Our Verified Vendor</Text></Link>
       <SocialLinks/>
     </View>
@@ -29,18 +29,17 @@ const GetStartedModal = ({ isVisible, onClose, children }: Props) => {
 export default GetStartedModal
 
 const styles = StyleSheet.create({
-    container:{
-        padding:15,
-
-    },
+  container: {
+    padding: 15,
+  },
   title: {
-    color: '#fff',
+    color: "#fff",
     fontSize: 25,
-    fontWeight: '600'
+    fontWeight: "600",
   },
   text:{
     color:"#fff",
-
+    fontSize:16
   },
   button:{
     backgroundColor:Colors.titleText,

@@ -48,13 +48,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     // display:"flex",
     // flexDirection:"column",
-    marginBottom: 15,
+    marginBottom: 10,
     // flex:1
   },
   title: {
     paddingHorizontal: 15,
     paddingVertical: 5,
-    width: 180,
+    width: 210,
     borderTopLeftRadius: 5,
     borderTopRightRadius: 5,
     backgroundColor: Colors.primary,

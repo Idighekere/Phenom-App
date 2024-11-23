@@ -3,6 +3,7 @@ import React from 'react'
 import { Colors } from '@/constants/Color'
 import { AdditionalInfo, EarningStructure } from '@/constants/EarningStructure'
 import { Pressable } from 'react-native'
+import { Link } from 'expo-router'
 
 type Props = {}
 
@@ -24,7 +25,7 @@ const EarningStructureModal = (props: Props) => {
         )}
       />
 
-      <Text style={styles.title}>💡Additional Info</Text>
+      <Text style={[styles.title,{marginTop:13}]}>💡Additional Info</Text>
 
       <FlatList
         data={AdditionalInfo}
@@ -41,7 +42,7 @@ const EarningStructureModal = (props: Props) => {
       />
 
 
-      <Pressable style={styles.button}><Text style={[styles.text,{textAlign:"center"}]}>Get Started Now!</Text></Pressable>
+      <Link href="https://t.me/PhenomOfficialRep" style={styles.button}><Text style={[styles.text,{textAlign:"center"}]}>Get Started Now!</Text></Link>
     </View>
   )
 }
@@ -57,11 +58,12 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontSize: 25,
     fontWeight: '700',
-    marginBottom: 15
+    marginBottom: 8
 
   },
   text: {
-    color: '#fff'
+    color: '#fff',
+    fontSize:16,
   },
   button: {
     backgroundColor: Colors.titleText,

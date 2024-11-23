@@ -26,18 +26,19 @@ export default Modals
 const styles = StyleSheet.create({
   modalContent: {
     backgroundColor: Colors.background,
+    borderWidth: 1.4,
+    borderColor: Colors.primary,
     height: 'auto',
     width: '100%',
-    //marginHorizontal:15,
+    // marginHorizontal:15,
     margin:"auto",
     borderRadius: 12,
     position: 'absolute',
-    bottom: 0,
+    bottom: 5,
+    // left:10,
+    // right:10,
+    justifyContent:"center",
     padding: 15,
-    //justifyContent:"center",
-    borderColor: "red",
-    //borderWidth: 10,
-    //height: 400,
     overflowY: "scroll"
   }
 })

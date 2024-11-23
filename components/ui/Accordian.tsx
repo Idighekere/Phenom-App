@@ -19,7 +19,7 @@ const Accordian = ({ answer, question }: Props) => {
         style={styles.questionContainer}
       >
         <Text style={styles.question}>❓{question}</Text>
-        <Text style={styles.toggleIcons}>{isOpen ? <AntDesign name="caretup" size={24} color="black" /> : <AntDesign name="caretdown" size={24} color="black" />}</Text>
+        <Text style={styles.toggleIcons}>{isOpen ? <AntDesign name="caretup" size={20} color="black" /> : <AntDesign name="caretdown" size={20} color="black" />}</Text>
       </TouchableOpacity>
       {isOpen && <Text style={styles.answer}>{answer}</Text>}
     </View>
