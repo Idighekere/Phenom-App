@@ -9,11 +9,14 @@ import {
   Header,
   Footer
 } from '@/components'
-import ImageSlider from '@/components/ui/ImageSlider'
+import { Carousel } from '@/components/ui';
 
 const images = [
-  { source: 'https://via.placeholder.com/300/FF0000', title: 'Red Placeholder' }, { source: 'https://via.placeholder.com/300/00FF00', title: 'Green Placeholder' }, { source: 'https://via.placeholder.com/300/0000FF', title: 'Blue Placeholder' },
-]
+  { title: "Image 1", source: require("@/assets/Phenom is Global.jpg")},
+  { title: "Image 2", source: require("@/assets/Unleash The Opulence In You with Phenom.jpg") },
+  { title: "Image 3", source: require('@/assets/Get onboard.jpg') },
+];
+
 type Props = {}
 
 const HomeScreen = (props: Props) => {
@@ -21,7 +24,9 @@ const HomeScreen = (props: Props) => {
     <SafeAreaView style={styles.homeContainer}>
       <View style={styles.viewContainer}>
         <Header />
-        <ImageSlider images={images} />
+        <View style={{height:"auto"}}>
+        <Carousel images={images} />
+          </View>
         <About />
         <EarningsLayout />
         <FAQ />
@@ -36,10 +41,12 @@ export default HomeScreen
 
 const styles = StyleSheet.create({
   homeContainer: {
-    flex: 1
+    flex: 1,
+    marginTop:35
   },
   viewContainer: {
     backgroundColor: Colors.background,
-    padding: 20
+    // margin: 20,
+
   }
 })

@@ -28,10 +28,16 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.background,
     height: 'auto',
     width: '100%',
-    margin: 20,
+    //marginHorizontal:15,
+    margin:"auto",
     borderRadius: 12,
     position: 'absolute',
     bottom: 0,
-    padding: 15
+    padding: 15,
+    //justifyContent:"center",
+    borderColor: "red",
+    //borderWidth: 10,
+    //height: 400,
+    overflowY: "scroll"
   }
 })

@@ -41,7 +41,7 @@ const EarningStructureModal = (props: Props) => {
       />
 
 
-      <Pressable style={styles.button}>Get Started Now!</Pressable>
+      <Pressable style={styles.button}><Text style={[styles.text,{textAlign:"center"}]}>Get Started Now!</Text></Pressable>
     </View>
   )
 }
@@ -50,13 +50,14 @@ export default EarningStructureModal
 
 const styles = StyleSheet.create({
   container: {
-    //padding: 12
+    padding: 12,
+
   },
   title: {
     color: '#fff',
-    fontSize: 27,
+    fontSize: 25,
     fontWeight: '700',
-    marginVertical: 15
+    marginBottom: 15
 
   },
   text: {
@@ -67,14 +68,14 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 15,
     borderRadius: 8,
-    width: 200,
+    width: 220,
     textAlign: 'center',
     color: '#fff',
     marginVertical: 15
   },
   listContainer: {
     color: '#fff',
-    fontSize: 17,
+    fontSize: 16,
     // padding: 15,
 
   }

@@ -7,6 +7,7 @@ import { Link } from 'expo-router'
 
 type Props = {
     iconsJustify?:"flex-start" | "center" | "space-between"
+    textAlign?:"center"| "left"|"right"
 }
 
 const links=[
@@ -33,12 +34,22 @@ const links=[
 },
 ]
 
-const SocialLinks = ({iconsJustify="flex-start"}: Props) => {
+const SocialLinks = ({iconsJustify="flex-start",textAlign="center"}: Props) => {
   return (
     <View>
-      <Text style={styles.text}>Join our verified social handles for more information on how Phenom works:</Text>
+      {/* Text Component */}
+      <Text style={[styles.text,{textAlign}]}>
+        Join our verified social handles for more information on how Phenom works:
+      </Text>
 
-      <View style={[styles.links,{justifyContent:iconsJustify}]}> {links.map(({link,platform,icon})=>(<Link href={link}>{icon}</Link>))}</View>
+      {/* View Component for Links */}
+      <View style={[styles.links, { justifyContent: iconsJustify }]}>
+        {links.map(({ link, platform, icon }) => (
+          <Link key={platform} href={link}>
+            {icon}
+          </Link>
+        ))}
+      </View>
     </View>
   )
 }

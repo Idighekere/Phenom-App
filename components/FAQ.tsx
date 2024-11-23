@@ -1,7 +1,6 @@
-import { Button, Pressable, StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native'
 import React, { useState } from 'react'
 import { Faq } from '@/constants/Faq'
-import { Colors } from '@/constants/Color'
 import Accordian from './ui/Accordian'
 
 type Props = {}
@@ -14,7 +13,7 @@ const FAQ = (props: Props) => {
   }
 
   return (
-    <View>
+    <View style={styles.container}>
       <Text style={styles.title}>Frequently asked Questions about Phenom</Text>
       <View style={styles.accordianContainer}>
         {Faq.map((faq,idx) => (
@@ -28,6 +27,9 @@ const FAQ = (props: Props) => {
 export default FAQ
 
 const styles = StyleSheet.create({
+  container:{
+    margin:15
+  },
   title: {
     color:"#fff",
     fontSize: 22,

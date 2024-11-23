@@ -10,7 +10,7 @@ export default function App () {
         <HomeScreen />
         <StatusBar style='light' />
       </View>
-    </ScrollView>
+     </ScrollView>
   )
 }
 

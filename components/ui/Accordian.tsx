@@ -1,6 +1,6 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React, { useState } from 'react'
-
+import AntDesign from '@expo/vector-icons/AntDesign';
 type Props = {
   question: string
   answer: string
@@ -19,7 +19,7 @@ const Accordian = ({ answer, question }: Props) => {
         style={styles.questionContainer}
       >
         <Text style={styles.question}>❓{question}</Text>
-        <Text style={styles.toggleIcons}>{isOpen ? '-' : '+'}</Text>
+        <Text style={styles.toggleIcons}>{isOpen ? <AntDesign name="caretup" size={24} color="black" /> : <AntDesign name="caretdown" size={24} color="black" />}</Text>
       </TouchableOpacity>
       {isOpen && <Text style={styles.answer}>{answer}</Text>}
     </View>
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     fontWeight: '800'
   },
   question: {
-    fontWeight: '600',
+    fontWeight: '700',
     fontSize: 18
   },
   answer: {
