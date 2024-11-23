@@ -6,7 +6,7 @@ import FontAwesome5 from '@expo/vector-icons/FontAwesome5'
 import { Link } from 'expo-router'
 
 type Props = {
-    iconsJustify?:"flex-start" | "center" | "space-between"
+    iconsJustify?: "flex-start" | "center" | "space-between"
 }
 
 const links=[
