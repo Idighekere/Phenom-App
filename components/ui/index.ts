@@ -1,7 +1,4 @@
-export {default as Accordian} from "./Accordian"
-export {default as Button} from "./Button"
-export {default as EarningStructureModal} from "./EarningStructureModal"
-export {default as GetStartedModal} from "./GetStartedModal"
-export {default as Modals} from "./Modal"
-export {default as SocialLinks} from "./SocialLinks"
-export {default as Carousel} from "./Carousel"
+export { default as Accordian } from './Accordian'
+export { default as Button } from './Button'
+export { default as Modals } from './Modal'
+export { default as Carousel } from './Carousel'

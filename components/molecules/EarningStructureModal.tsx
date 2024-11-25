@@ -2,7 +2,6 @@ import { FlatList, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Colors } from '@/constants/Color'
 import { AdditionalInfo, EarningStructure } from '@/constants/EarningStructure'
-import { Pressable } from 'react-native'
 import { Link } from 'expo-router'
 
 type Props = {}

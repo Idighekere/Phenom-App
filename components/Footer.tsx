@@ -3,9 +3,7 @@ import React from 'react'
 import { Colors } from '@/constants/Color'
 import { Image } from 'expo-image'
 
-type Props = {}
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <View style={styles.container}>
       <Image source={require("@/assets/logo.png")} style={{width:60,height:60,}} />

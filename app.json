@@ -19,13 +19,22 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.idighs.Phenom"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/icon.png"
     },
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "fef6e6f8-2741-45f0-9268-56936e5bc66e"
+      }
+    }
   }
 }
