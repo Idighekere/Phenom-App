@@ -21,7 +21,7 @@ const GetStarted = (props: Props) => {
       </Text>
       <Button label='Join Waitlist Now!' onPress={handleShowModal} />
 
-      <SocialLinks iconsJustify='center'/>
+      <SocialLinks iconsJustify='center'textAlign="center"/>
 
       <Modals isVisible={isModalVisible} onClose={handleCloseModal}>
         <GetStartedModal />
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     padding: 15,
     borderRadius: 15,
     justifyContent: 'center',
-    marginTop: 15
+    margin: 15
   },
   title: {
     color: Colors.titleText,

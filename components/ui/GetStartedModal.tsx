@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, Modal, Pressable } from 'react-native'
 import React, { PropsWithChildren } from 'react'
 import { Colors } from '@/constants/Color'
 import SocialLinks from './SocialLinks'
+import { Link } from 'expo-router'
 
 type Props = PropsWithChildren<{
   isVisible?: boolean
@@ -18,9 +19,8 @@ const GetStartedModal = ({ isVisible, onClose, children }: Props) => {
         process and help you make the most out of your new opportunities.
       </Text>
       {/* <Button label='Contact Our Verified Vendor'/> */}
-      <Pressable style={styles.button}>
-        <Text style={styles.text}>Contact Our Verified Vendor</Text> 
-    </Pressable>
+      <Link href="https://t.me/PhenomOfficialRep" style={styles.button}><Text style={[styles.text, { textAlign: "center", }]}>
+        Contact Our Verified Vendor</Text></Link>
       <SocialLinks/>
     </View>
   )
@@ -37,17 +37,19 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: "600",
   },
-  text: {
-    color: "#fff",
+  text:{
+    color:"#fff",
+    fontSize:16
   },
-  button: {
-    backgroundColor: Colors.titleText,
-    paddingVertical: 10,
-    paddingHorizontal: 15,
-    borderRadius: 8,
-    textAlign: "center",
-    width: 175,
-    color: "#fff",
-    marginVertical: 15,
-  },
-});
+  button:{
+    backgroundColor:Colors.titleText,
+    paddingVertical:10,
+    paddingHorizontal:15,
+    borderRadius:8,
+    width:"auto",
+    justifyContent:"center",
+    alignItems:"center",
+    color:"#fff",
+    marginVertical:15,
+  }
+})

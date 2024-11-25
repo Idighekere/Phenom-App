@@ -29,11 +29,16 @@ const styles = StyleSheet.create({
     borderWidth: 1.4,
     borderColor: Colors.primary,
     height: 'auto',
-    width: '95%',
-    margin: 10,
+    width: '100%',
+    // marginHorizontal:15,
+    margin:"auto",
     borderRadius: 12,
     position: 'absolute',
-    bottom: 0,
-    padding: 15
+    bottom: 5,
+    // left:10,
+    // right:10,
+    justifyContent:"center",
+    padding: 15,
+    overflowY: "scroll"
   }
 })

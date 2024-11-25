@@ -3,6 +3,7 @@ import React from 'react'
 import { Colors } from '@/constants/Color'
 import { AdditionalInfo, EarningStructure } from '@/constants/EarningStructure'
 import { Pressable } from 'react-native'
+import { Link } from 'expo-router'
 
 type Props = {}
 
@@ -24,7 +25,7 @@ const EarningStructureModal = (props: Props) => {
         )}
       />
 
-      <Text style={styles.title}>💡Additional Info</Text>
+      <Text style={[styles.title,{marginTop:13}]}>💡Additional Info</Text>
 
       <FlatList
         data={AdditionalInfo}
@@ -41,7 +42,7 @@ const EarningStructureModal = (props: Props) => {
       />
 
 
-      <Pressable style={styles.button}>Get Started Now!</Pressable>
+      <Link href="https://t.me/PhenomOfficialRep" style={styles.button}><Text style={[styles.text,{textAlign:"center"}]}>Get Started Now!</Text></Link>
     </View>
   )
 }
@@ -50,31 +51,33 @@ export default EarningStructureModal
 
 const styles = StyleSheet.create({
   container: {
-    //padding: 12
+    padding: 12,
+
   },
   title: {
     color: '#fff',
-    fontSize: 27,
+    fontSize: 25,
     fontWeight: '700',
-    marginVertical: 15
+    marginBottom: 8
 
   },
   text: {
-    color: '#fff'
+    color: '#fff',
+    fontSize:16,
   },
   button: {
     backgroundColor: Colors.titleText,
     paddingVertical: 10,
     paddingHorizontal: 15,
     borderRadius: 8,
-    width: 200,
+    width: 220,
     textAlign: 'center',
     color: '#fff',
     marginVertical: 15
   },
   listContainer: {
     color: '#fff',
-    fontSize: 17,
+    fontSize: 16,
     // padding: 15,
 
   }

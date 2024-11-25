@@ -1,7 +1,8 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { Dimensions, StyleSheet, Text, View } from 'react-native'
 import React, { useState } from 'react'
 import { Colors } from '@/constants/Color'
 import { Button, EarningStructureModal, Modals } from './ui'
+import { Image } from 'expo-image'
 
 type Props = {}
 
@@ -13,14 +14,20 @@ const EarningsLayout = (props: Props) => {
   const handleCloseModal = () => {
     setIsModalVisible(false)
   }
+  const { width } = Dimensions.get('window');
 
   return (
-    <View>
-      <Text style={styles.title}>Earnings Layout</Text>
-      <View style={styles.itemsContainer}>
-        <Button label='View Structure Breakdown' onPress={handleShowModal} />
+    <View style={styles.container}>
+      <View style={styles.titleContainer}>
+        <Text style={styles.title}>Earnings Layout</Text>
       </View>
 
+      <View style={styles.itemsContainer}>
+
+        <Image source={require("@/assets/Get onboard.jpg")} style={[styles.image]} contentFit="contain"
+        />
+        <Button label='View Structure Breakdown' onPress={handleShowModal} />
+      </View>
       <Modals isVisible={isModalVisible} onClose={handleCloseModal}>
         <EarningStructureModal />
       </Modals>
@@ -31,25 +38,46 @@ const EarningsLayout = (props: Props) => {
 export default EarningsLayout
 
 const styles = StyleSheet.create({
+  container: {
+    width: "auto",
+    margin:15,
+    borderRadius:10
+  },
+  titleContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    // display:"flex",
+    // flexDirection:"column",
+    marginBottom: 10,
+    // flex:1
+  },
   title: {
-    backgroundColor: Colors.primary,
-    borderTopRightRadius: 7,
-    borderTopLeftRadius: 7,
-    width: 180,
     paddingHorizontal: 15,
     paddingVertical: 5,
+    width: 210,
+    borderTopLeftRadius: 5,
+    borderTopRightRadius: 5,
+    backgroundColor: Colors.primary,
     color: Colors.titleText,
-    justifyContent: 'center',
-    marginBottom: 15,
     fontWeight: '600',
     fontSize: 18,
-    flexDirection: 'row',
     textAlign: 'center',
-    alignItems: 'center'
   },
   itemsContainer: {
     padding: 20,
-    borderRadius: 20,
-    backgroundColor: Colors.primary
+    backgroundColor: Colors.primary,
+    //height:"auto",
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius:12,
+  },
+  image: {
+    aspectRatio: 1,
+    borderRadius: 8,
+    height: "100%",
+    width: "100%",
+    marginBottom: 15,
+    flex: 1
   }
 })
