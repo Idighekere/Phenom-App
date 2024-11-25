@@ -4,13 +4,13 @@
     "slug": "Phenom",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/phenomicon.jpg",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/phenomlognobg.png",
-      "resizeMode": "cover",
-      "backgroundColor": "#531084"
+      "image": "./assets/phenomicon.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#3B1254"
     },
     "ios": {
       "supportsTablet": true
@@ -25,7 +25,20 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-router"
-    ]
+      "expo-router",
+      ["expo-video",
+        {
+          "supportsBackgroundPlayback": true,
+          "supportsPictureInPicture": true
+        }]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "7d29dd6c-bf84-4b44-af58-e53cf7cfe525"
+      }
+    }
   }
 }
