@@ -1,16 +1,11 @@
 import { SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Colors } from '@/constants/Color'
-import {
-  About,
-  EarningsLayout,
-  FAQ,
-  GetStarted,
-  Header,
-  Footer
-} from '@/components'
+import { Footer, Header } from '@/components';
+import { YoutubePlayer } from '@/components/molecules';
 import { Carousel } from '@/components/ui';
-import VideoPlayer from '@/components/VideoPlayer';
+import { About, EarningsLayout, FAQ, GetStarted } from '@/components/sections';
+
 const images = [
   { title: "Image 1", source: require("@/assets/Phenom is Global.jpg") },
   {
@@ -28,12 +23,12 @@ const images = [
 
 type Props = {}
 
-const HomeScreen = (props: Props) => {
+const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.homeContainer}>
       <View style={styles.viewContainer}>
         <Header />
-        <VideoPlayer />
+        <YoutubePlayer videoId='FvViBE5hSBc'/>
         <View style={{height:"auto"}}>
         <Carousel images={images} />
           </View>
@@ -41,6 +36,7 @@ const HomeScreen = (props: Props) => {
         <EarningsLayout />
         <FAQ />
         <GetStarted />
+        <YoutubePlayer videoId='FvViBE5hSBc'/>
       </View>
       <Footer />
     </SafeAreaView>

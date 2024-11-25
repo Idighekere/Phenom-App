@@ -1,7 +1,8 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React, { useState } from 'react'
 import { Colors } from '@/constants/Color'
-import { Button, GetStartedModal, Modals, SocialLinks } from './ui'
+import { Button, Modals } from '../ui'
+import { GetStartedModal, SocialLinks } from '../molecules'
 
 type Props = {}
 
@@ -21,7 +22,7 @@ const GetStarted = (props: Props) => {
       </Text>
       <Button label='Join Waitlist Now!' onPress={handleShowModal} />
 
-      <SocialLinks iconsJustify='center'textAlign="center"/>
+      <SocialLinks iconsJustify='center' textAlign="center" />
 
       <Modals isVisible={isModalVisible} onClose={handleCloseModal}>
         <GetStartedModal />

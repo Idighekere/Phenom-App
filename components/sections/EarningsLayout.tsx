@@ -1,8 +1,9 @@
 import { Dimensions, StyleSheet, Text, View } from 'react-native'
 import React, { useState } from 'react'
 import { Colors } from '@/constants/Color'
-import { Button, EarningStructureModal, Modals } from './ui'
 import { Image } from 'expo-image'
+import { Button, Modals } from '../ui'
+import { EarningStructureModal } from '../molecules'
 
 type Props = {}
 
@@ -40,8 +41,8 @@ export default EarningsLayout
 const styles = StyleSheet.create({
   container: {
     width: "auto",
-    margin:15,
-    borderRadius:10
+    margin: 15,
+    borderRadius: 10
   },
   titleContainer: {
     justifyContent: 'center',
@@ -70,7 +71,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    borderRadius:12,
+    borderRadius: 12,
   },
   image: {
     aspectRatio: 1,

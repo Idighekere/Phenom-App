@@ -4,7 +4,8 @@ import { Colors } from '@/constants/Color'
 import { Image } from 'expo-image'
 import Ionicons from '@expo/vector-icons/Ionicons';
 import '@/assets/logo.png'
-import { Button, GetStartedModal, Modals } from './ui'
+import { Modals } from './ui';
+import { GetStartedModal } from './molecules';
 const logo = require('@/assets/logo.png')
 type Props = {}
 

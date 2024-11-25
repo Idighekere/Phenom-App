@@ -1,8 +1,9 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React, { useState } from 'react'
 import { Colors } from '@/constants/Color'
-import { Button, GetStartedModal, Modals } from './ui'
 import { Image } from 'expo-image'
+import { Button, Modals } from '../ui'
+import { GetStartedModal } from '../molecules'
 type Props = {}
 
 const About = (props: Props) => {

@@ -19,25 +19,21 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.idighs.Phenom"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/icon.png"
     },
     "plugins": [
-      "expo-router",
-      ["expo-video",
-        {
-          "supportsBackgroundPlayback": true,
-          "supportsPictureInPicture": true
-        }]
+      "expo-router"
     ],
     "extra": {
       "router": {
         "origin": false
       },
       "eas": {
-        "projectId": "7d29dd6c-bf84-4b44-af58-e53cf7cfe525"
+        "projectId": "fef6e6f8-2741-45f0-9268-56936e5bc66e"
       }
     }
   }

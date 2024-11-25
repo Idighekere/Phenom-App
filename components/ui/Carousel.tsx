@@ -129,9 +129,9 @@ const styles = StyleSheet.create({
         width: 5,
         height: 5,
         borderRadius: "100%",
-        backgroundColor: "white"
+        backgroundColor: "gray"
     },
     activeIndicator: {
-        backgroundColor: "gray"
+        backgroundColor: "white"
     }
 })

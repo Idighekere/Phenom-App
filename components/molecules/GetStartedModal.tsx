@@ -21,7 +21,7 @@ const GetStartedModal = ({ isVisible, onClose, children }: Props) => {
       {/* <Button label='Contact Our Verified Vendor'/> */}
       <Link href="https://t.me/PhenomOfficialRep" style={styles.button}><Text style={[styles.text, { textAlign: "center", }]}>
         Contact Our Verified Vendor</Text></Link>
-      <SocialLinks/>
+      <SocialLinks />
     </View>
   )
 }
@@ -37,19 +37,19 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: "600",
   },
-  text:{
-    color:"#fff",
-    fontSize:16
+  text: {
+    color: "#fff",
+    fontSize: 16
   },
-  button:{
-    backgroundColor:Colors.titleText,
-    paddingVertical:10,
-    paddingHorizontal:15,
-    borderRadius:8,
-    width:"auto",
-    justifyContent:"center",
-    alignItems:"center",
-    color:"#fff",
-    marginVertical:15,
+  button: {
+    backgroundColor: Colors.titleText,
+    paddingVertical: 10,
+    paddingHorizontal: 15,
+    borderRadius: 8,
+    width: "auto",
+    justifyContent: "center",
+    alignItems: "center",
+    color: "#fff",
+    marginVertical: 15,
   }
 })
